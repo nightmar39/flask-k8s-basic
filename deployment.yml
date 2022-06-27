@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-flask-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-flask
+  template:
+    metadata:
+      labels:
+        app: simple-flask
+    spec:
+      containers:
+      - name: flask-server-simple
+        image: docker.io/nightmar39/basic-flask-docker:main-013fbe8
+        ports:
+        - containerPort: 8000
