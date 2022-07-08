@@ -14,7 +14,7 @@ spec:
         app: simple-flask
     spec:
       containers:
-      - name: flask-server-simple
-        image: docker.io/nightmar39/basic-flask-docker:main-013fbe8
-        ports:
-        - containerPort: 8000
+        - name: flask-server-simple
+          image: docker.io/nightmar39/basic-flask-docker:main-013fbe8
+          ports:
+            - containerPort: 8000
