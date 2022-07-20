@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: flask-server-simple
-          image: docker.io/nightmar39/nightmar39/basic-flask-docker:ee845bf
+          image: docker.io/nightmar39/nightmar39/basic-flask-docker:d0752f9
           ports:
             - containerPort: 8000
